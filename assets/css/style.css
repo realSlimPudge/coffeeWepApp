@@ -47,6 +47,7 @@ main {
 	background-color: #24272b;
 	padding: 10px 10px;
 	border-radius: 20px;
+	z-index: 10;
 }
 
 .category_on_active {
