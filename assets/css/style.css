@@ -1,0 +1,104 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	scroll-behavior: smooth;
+}
+html {
+	scroll-padding-top: 100px;
+}
+body {
+	max-width: 430px;
+	margin: 0 auto;
+}
+
+.header_logo {
+	max-width: 335px;
+	margin: 17px auto;
+}
+
+main {
+	background-color: #24272b;
+	padding: 22px 19px 16px 19px;
+}
+
+.main_categories {
+	display: flex;
+	max-width: 365px;
+	justify-content: space-between;
+	margin: 0 auto;
+	margin-bottom: 25px;
+	align-items: center;
+	position: sticky;
+	top: 10px;
+}
+
+.category {
+	color: #fff;
+	font-weight: 400;
+	font-size: 14px;
+	cursor: pointer;
+	background-color: #24272b;
+	padding: 10px 10px;
+	border-radius: 20px;
+}
+
+.category_on_active {
+	background-color: #fff;
+	border-radius: 25px;
+	max-width: 117px;
+	padding: 11px 9px 13px 9px;
+	font-weight: 500;
+	color: #000;
+}
+
+.showcase_goods {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 23px 20px;
+}
+
+.card_good {
+	background-color: #fff;
+	max-width: 186px;
+	border-radius: 13px;
+	padding: 22px 17px;
+	cursor: pointer;
+}
+
+.card_title {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.img_cappuccino {
+	max-width: 142px;
+	margin: 39px auto 23px auto;
+}
+
+.card_price_volume {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#card_price {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+#card_volume {
+	font-size: 10px;
+	font-weight: 300;
+}
+
+.showcase_title {
+	font-size: 22px;
+	font-weight: 700;
+	color: #fff;
+	margin: 15px 0 15px 10px;
+}
