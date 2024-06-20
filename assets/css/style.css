@@ -51,12 +51,22 @@ main {
 }
 
 .category_on_active {
-	background-color: #fff;
+	background: rgba(255, 255, 255, 1);
 	border-radius: 25px;
 	max-width: 117px;
 	padding: 11px 9px 13px 9px;
 	font-weight: 500;
 	color: #000;
+	animation: in 500ms ease;
+}
+
+@keyframes in {
+	0% {
+		background: rgba(255, 255, 255, 0);
+	}
+	100% {
+		background: rgba(255, 255, 255, 1);
+	}
 }
 
 .showcase_goods {
