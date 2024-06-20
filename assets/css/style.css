@@ -81,7 +81,9 @@ main {
 	max-width: 142px;
 	margin: 39px auto 23px auto;
 }
-
+.img_cappuccino img {
+	width: 100%;
+}
 .card_price_volume {
 	display: flex;
 	justify-content: space-between;
@@ -103,4 +105,9 @@ main {
 	font-weight: 700;
 	color: #fff;
 	margin: 15px 0 15px 10px;
+}
+@media screen and (max-width: 370px) {
+	.category {
+		font-size: 12px;
+	}
 }
