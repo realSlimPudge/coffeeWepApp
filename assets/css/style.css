@@ -70,6 +70,11 @@ main {
 	border-radius: 13px;
 	padding: 22px 17px;
 	cursor: pointer;
+	transition: scale 300ms ease;
+}
+
+.card_good:hover {
+	scale: 1.05;
 }
 
 .card_title {
