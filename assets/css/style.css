@@ -15,7 +15,9 @@ body {
 	max-width: 430px;
 	margin: 0 auto;
 }
-
+header{
+	background-color:white;
+}
 .header_logo {
 	max-width: 335px;
 	margin: 17px auto;
