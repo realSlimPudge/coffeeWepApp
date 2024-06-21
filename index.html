@@ -72,11 +72,11 @@
 
               <div class="card_count_of_goods">
                 <div id="countMinus" class="count_minus">
-                  <img src="assets/img/minus.svg" alt="" />
+                  <img src="/assets/img/minus.svg" alt="" />
                 </div>
                 <span id="countGoods">1</span>
                 <div id="countPlus" class="count_plus">
-                  <img src="assets/img/plus.svg" alt="" />
+                  <img src="/assets/img/plus.svg" alt="" />
                 </div>
               </div>
             </div>
@@ -197,8 +197,35 @@
       </div>
 
       <div class="go_basket">
-        <button>Перейти в корзину</button>
+        <button id="openCart">Перейти в корзину</button>
       </div>
+      <dialog id="shopCart">
+        <div class="content_dialog">
+          <div class="title_dialog">
+            <div>Корзина</div>
+            <button class="close_btn" id="closeCart">
+              <img src="assets/img/Group 12.svg" alt="">
+            </button>
+          </div>
+          <div class="items_dialog">
+            <div class="items">
+              <div><img src="assets/img/cappuccino.png" alt=""></div>
+            </div>
+            <div class="item_info">
+              <p>Капичино</p>
+              <p>Карамельный сироп</p>
+              <p>300 мл</p>
+            </div>
+            <div>
+              <span>250 рублей</span>
+
+            </div>
+          </div>
+          <div class="more">
+
+          </div>
+        </div>
+      </dialog>
     </main>
 
     <script src="assets/js/app.js" defer></script>
