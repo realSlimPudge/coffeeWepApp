@@ -449,7 +449,7 @@ closeItem.addEventListener('click', function () {
 	document.body.classList.remove('dialog-open')
 })
 
-window.onclick = function (event) {
+window.addEventListener('click', function (event) {
 	if (event.target == openModal) {
 		openModal.close()
 		document.body.classList.remove('dialog-open')
@@ -457,7 +457,7 @@ window.onclick = function (event) {
 		itemModal.close()
 		document.body.classList.remove('dialog-open')
 	}
-}
+})
 
 let scrollTop
 let scrollLeft
