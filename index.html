@@ -1,186 +1,206 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Coffee</title>
-		<link rel="stylesheet" href="assets/css/style.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-			rel="stylesheet"
-		/>
-	</head>
-	<body>
-		<header>
-			<div class="header_logo">
-				<img src="assets/img/main logo.svg" alt="" />
-			</div>
-		</header>
+<html id="html" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header_logo">
+        <img src="assets/img/main logo.svg" alt="" />
+      </div>
+    </header>
 
-		<main>
-			<div class="main_categories">
-				<!-- <span class="category category_on_active" id="category">Популярное</span>
-        <span class="category" id="category2">Напитки</span>
-        <span class="category" id="category3">Выпечка</span>
-        <span class="category" id="category4">Акции</span> -->
+    <main>
+      <div class="main_window">
+        <div class="search">
+          <div class="search_img"><img src="/assets/img/magnifier.svg" alt="" /></div>
+          <input type="text" placeholder="Найти" />
+        </div>
 
-				<a
-					class="category category_on_active"
-					id="category"
-					href="#popularGoods"
-					>Популярное</a
-				>
-				<a class="category" id="category2" href="#drinks">Напитки</a>
-				<a class="category" id="category3" href="#bakeryGoods">Выпечка</a>
-				<a class="category" id="#" href="">Акции</a>
-			</div>
+        <div class="main_categories">
+          <!-- <span class="category category_on_active" id="category">Популярное</span>
+          <span class="category" id="category2">Напитки</span>
+          <span class="category" id="category3">Выпечка</span>
+          <span class="category" id="category4">Акции</span> -->
 
-			<div>
-				<p class="showcase_title" id="popularGoods">Популярное</p>
-				<div class="showcase_goods">
-					<div class="card_good">
-						<p class="card_title">Капучино</p>
+          <a class="category category_on_active" id="category" href="#popularGoods">Популярное</a>
+          <a class="category" id="category2" href="#drinks">Напитки</a>
+          <a class="category" id="category3" href="#bakeryGoods">Выпечка</a>
+          <a class="category" id="#" href="">Акции</a>
+        </div>
 
-						<div class="img_cappuccino">
-							<img src="assets/img/cappuccino.png" alt="" />
-						</div>
+        <div>
+          <p class="showcase_title" id="popularGoods">Популярное</p>
+          <div class="showcase_goods">
+            <div class="card_good">
+              <p class="card_title">Капучино</p>
 
-						<div class="card_price_volume">
-							<p id="card_price">190 руб</p>
-							<p id="card_volume">300 мл</p>
-						</div>
-					</div>
+              <div class="img_cappuccino">
+                <img src="assets/img/cappuccino.png" alt="" />
+              </div>
 
-					<div class="card_good">
-						<p class="card_title">Капучино</p>
+              <div class="card_price_volume">
+                <p id="card_price">190 руб</p>
+                <p id="card_volume">300 мл</p>
+              </div>
 
-						<div class="img_cappuccino">
-							<img src="assets/img/cappuccino.png" alt="" />
-						</div>
+              <div class="add_shopping_cart">
+                <span>Добавить</span>
+              </div>
+            </div>
 
-						<div class="card_price_volume">
-							<p id="card_price">190 руб</p>
-							<p id="card_volume">300 мл</p>
-						</div>
-					</div>
+            <div class="card_good">
+              <p class="card_title">Капучино</p>
 
-					<div class="card_good">
-						<p class="card_title">Капучино</p>
+              <div class="img_cappuccino">
+                <img src="assets/img/cappuccino.png" alt="" />
+              </div>
 
-						<div class="img_cappuccino">
-							<img src="assets/img/cappuccino.png" alt="" />
-						</div>
+              <div class="card_price_volume">
+                <p id="card_price">190 руб</p>
+                <p id="card_volume">300 мл</p>
+              </div>
 
-						<div class="card_price_volume">
-							<p id="card_price">190 руб</p>
-							<p id="card_volume">300 мл</p>
-						</div>
-					</div>
+              <div class="card_count_of_goods">
+                <div id="countMinus" class="count_minus">
+                  <img src="/assets/img/minus.svg" alt="" />
+                </div>
+                <span id="countGoods">1</span>
+                <div id="countPlus" class="count_plus">
+                  <img src="/assets/img/plus.svg" alt="" />
+                </div>
+              </div>
+            </div>
 
-					<div class="card_good">
-						<p class="card_title">Капучино</p>
+            <div class="card_good">
+              <p class="card_title">Капучино</p>
 
-						<div class="img_cappuccino">
-							<img src="assets/img/cappuccino.png" alt="" />
-						</div>
+              <div class="img_cappuccino">
+                <img src="assets/img/cappuccino.png" alt="" />
+              </div>
 
-						<div class="card_price_volume">
-							<p id="card_price">190 руб</p>
-							<p id="card_volume">300 мл</p>
-						</div>
-					</div>
-				</div>
+              <div class="card_price_volume">
+                <p id="card_price">190 руб</p>
+                <p id="card_volume">300 мл</p>
+              </div>
+            </div>
 
-				<p class="showcase_title" id="drinks">Напитки</p>
+            <div class="card_good">
+              <p class="card_title">Капучино</p>
 
-				<div class="showcase_goods">
-					<div class="card_good">
-						<p class="card_title">Капучино</p>
+              <div class="img_cappuccino">
+                <img src="assets/img/cappuccino.png" alt="" />
+              </div>
 
-						<div class="img_cappuccino">
-							<img src="assets/img/cappuccino.png" alt="" />
-						</div>
+              <div class="card_price_volume">
+                <p id="card_price">190 руб</p>
+                <p id="card_volume">300 мл</p>
+              </div>
+            </div>
+          </div>
 
-						<div class="card_price_volume">
-							<p id="card_price">190 руб</p>
-							<p id="card_volume">300 мл</p>
-						</div>
-					</div>
+          <p class="showcase_title" id="drinks">Напитки</p>
 
-					<div class="card_good">
-						<p class="card_title">Капучино</p>
+          <div class="showcase_goods">
+            <div class="card_good" id="card">
+              <p class="card_title">Капучино</p>
 
-						<div class="img_cappuccino">
-							<img src="assets/img/cappuccino.png" alt="" />
-						</div>
+              <div class="img_cappuccino">
+                <img src="assets/img/cappuccino.png" alt="" />
+              </div>
 
-						<div class="card_price_volume">
-							<p id="card_price">190 руб</p>
-							<p id="card_volume">300 мл</p>
-						</div>
-					</div>
+              <div class="card_price_volume">
+                <p id="card_price">190 руб</p>
+                <p id="card_volume">300 мл</p>
+              </div>
+            </div>
 
-					<div class="card_good">
-						<p class="card_title">Капучино</p>
+            <div class="card_good">
+              <p class="card_title">Капучино</p>
 
-						<div class="img_cappuccino">
-							<img src="assets/img/cappuccino.png" alt="" />
-						</div>
+              <div class="img_cappuccino">
+                <img src="assets/img/cappuccino.png" alt="" />
+              </div>
 
-						<div class="card_price_volume">
-							<p id="card_price">190 руб</p>
-							<p id="card_volume">300 мл</p>
-						</div>
-					</div>
-				</div>
+              <div class="card_price_volume">
+                <p id="card_price">190 руб</p>
+                <p id="card_volume">300 мл</p>
+              </div>
+            </div>
 
-				<p class="showcase_title" id="bakeryGoods">Выпечка</p>
+            <div class="card_good">
+              <p class="card_title">Капучино</p>
 
-				<div class="showcase_goods">
-					<div class="card_good">
-						<p class="card_title">Капучино</p>
+              <div class="img_cappuccino">
+                <img src="assets/img/cappuccino.png" alt="" />
+              </div>
 
-						<div class="img_cappuccino">
-							<img src="assets/img/cappuccino.png" alt="" />
-						</div>
+              <div class="card_price_volume">
+                <p id="card_price">190 руб</p>
+                <p id="card_volume">300 мл</p>
+              </div>
+            </div>
+          </div>
 
-						<div class="card_price_volume">
-							<p id="card_price">190 руб</p>
-							<p id="card_volume">300 мл</p>
-						</div>
-					</div>
+          <p class="showcase_title" id="bakeryGoods">Выпечка</p>
 
-					<div class="card_good">
-						<p class="card_title">Капучино</p>
+          <div class="showcase_goods">
+            <div class="card_good">
+              <p class="card_title">Капучино</p>
 
-						<div class="img_cappuccino">
-							<img src="assets/img/cappuccino.png" alt="" />
-						</div>
+              <div class="img_cappuccino">
+                <img src="assets/img/cappuccino.png" alt="" />
+              </div>
 
-						<div class="card_price_volume">
-							<p id="card_price">190 руб</p>
-							<p id="card_volume">300 мл</p>
-						</div>
-					</div>
+              <div class="card_price_volume">
+                <p id="card_price">190 руб</p>
+                <p id="card_volume">300 мл</p>
+              </div>
+            </div>
 
-					<div class="card_good">
-						<p class="card_title">Капучино</p>
+            <div class="card_good">
+              <p class="card_title">Капучино</p>
 
-						<div class="img_cappuccino">
-							<img src="assets/img/cappuccino.png" alt="" />
-						</div>
+              <div class="img_cappuccino">
+                <img src="assets/img/cappuccino.png" alt="" />
+              </div>
 
-						<div class="card_price_volume">
-							<p id="card_price">190 руб</p>
-							<p id="card_volume">300 мл</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</main>
+              <div class="card_price_volume">
+                <p id="card_price">190 руб</p>
+                <p id="card_volume">300 мл</p>
+              </div>
+            </div>
 
-		<script src="assets/js/app.js" defer></script>
-	</body>
+            <div class="card_good">
+              <p class="card_title">Капучино</p>
+
+              <div class="img_cappuccino">
+                <img src="assets/img/cappuccino.png" alt="" />
+              </div>
+
+              <div class="card_price_volume">
+                <p id="card_price">190 руб</p>
+                <p id="card_volume">300 мл</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="go_basket">
+        <button>Перейти в корзину</button>
+      </div>
+    </main>
+
+    <script src="assets/js/app.js" defer></script>
+  </body>
 </html>
