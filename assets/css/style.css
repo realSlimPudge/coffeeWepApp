@@ -239,4 +239,94 @@ header {
   background-color: #000;
   padding: 20px 92px;
   border-radius: 13px;
+  cursor: pointer;
+}
+
+#shopCart{
+  margin: 0 auto;
+  width: 90vh;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-radius: 10px 10px 0px 0px;
+  margin-top: 100px;
+}
+#shopCart::backdrop{
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.content_dialog{
+  width: 100%;
+  background-color: white;
+}
+.title_dialog{
+  display: flex;
+ align-items: center;
+ text-align: center;
+ width: 90%;
+ margin: 0 auto;
+ padding-top: 10px;
+ justify-content: space-between;
+}
+.title_dialog div{
+  font-weight: 600;
+font-size: 24px;
+color: #000;
+}
+.close_btn{
+  background:transparent;
+  outline: none;
+  border: none;
+  padding-top: 7px;
+}
+.items_dialog{
+  height: 120px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 3px 11px 3px rgba(119, 114, 176, 0.3);
+background: #fff;
+border-radius: 13px;
+margin: 0 auto;
+margin-top: 30px;
+}
+.items{
+  width: 89px;
+height: 74px;
+}
+.items img{
+  width: 100%;
+}
+.item_info p:nth-child(1){
+font-weight: 500;
+font-size: 20px;
+color: #000;
+}
+.item_info p:nth-child(2){
+  font-weight: 400;
+font-size: 12px;
+color: #000;
+  }
+  .item_info p:nth-child(3){
+    font-weight: 400;
+  font-size: 12px;
+  color: #000;
+    }
+
+.cost span{
+  font-weight: 600;
+font-size: 16px;
+color: #000;
+}
+.item_grid{
+  box-shadow: 0 3px 11px 3px rgba(119, 114, 176, 0.3);
+  border-radius: 13px;
+width: 186px;
+height: 255px;
+}
+.more{
+  margin-top: 30px;
+}
+.items_grid{
+  margin-top: 20px;
 }
