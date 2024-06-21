@@ -362,10 +362,10 @@ color: #000;
   justify-content: space-between;
 }
 @media screen and (max-width:420px){
-  .items_grid{
-    grid-template-columns: 1fr;
-    width: 50%;
-    margin: 0 auto;
-    margin-top: 20px;
+  .item_grid{
+    width:140px ;
+  }
+  .cost_grid span:nth-last-of-type(1){
+    margin-left: 40px;
   }
 }
