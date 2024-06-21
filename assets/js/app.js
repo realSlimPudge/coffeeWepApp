@@ -367,25 +367,30 @@ addBacketBakery3.addEventListener('click', () => {
 
 //евгений
 category.addEventListener('click', () => {
-	category.classList.add('category_on_active')
-	category2.classList.remove('category_on_active')
-	category3.classList.remove('category_on_active')
-	category4.classList.remove('category_on_active')
-	html.style.scrollPaddingTop = '135px'
+	setTimeout(() => {
+		category.classList.add('category_on_active')
+		category2.classList.remove('category_on_active')
+		category3.classList.remove('category_on_active')
+		category4.classList.remove('category_on_active')
+	}, 300)
 })
 
 category2.addEventListener('click', () => {
-	category2.classList.add('category_on_active')
-	category.classList.remove('category_on_active')
-	category3.classList.remove('category_on_active')
-	category4.classList.remove('category_on_active')
+	setTimeout(() => {
+		category2.classList.add('category_on_active')
+		category.classList.remove('category_on_active')
+		category3.classList.remove('category_on_active')
+		category4.classList.remove('category_on_active')
+	}, 300)
 })
 
 category3.addEventListener('click', () => {
-	category3.classList.add('category_on_active')
-	category2.classList.remove('category_on_active')
-	category.classList.remove('category_on_active')
-	category4.classList.remove('category_on_active')
+	setTimeout(() => {
+		category3.classList.add('category_on_active')
+		category2.classList.remove('category_on_active')
+		category.classList.remove('category_on_active')
+		category4.classList.remove('category_on_active')
+	}, 300)
 })
 
 // category4.addEventListener('click', () => {
@@ -467,9 +472,6 @@ window.addEventListener('touchstart', function (event) {
 		document.body.classList.remove('dialog-open')
 	}
 })
-
-let scrollTop
-let scrollLeft
 
 const elements = document.querySelectorAll('.category')
 const thresholds = [25, 40, 85, 100]
