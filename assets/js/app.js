@@ -397,41 +397,85 @@ category3.addEventListener('click', () => {
 
 openCart.addEventListener('click', function () {
 	openModal.showModal()
+	document.body.classList.add('dialog-open')
 })
 closeCart.addEventListener('click', () => {
 	openModal.close()
+	document.body.classList.remove('dialog-open')
 })
 
 openItem1.addEventListener('click', function () {
 	itemModal.showModal()
+	document.body.classList.add('dialog-open')
 })
 openItem2.addEventListener('click', function () {
 	itemModal.showModal()
+	document.body.classList.add('dialog-open')
 })
 openItem3.addEventListener('click', function () {
 	itemModal.showModal()
+	document.body.classList.add('dialog-open')
 })
 openItem4.addEventListener('click', function () {
 	itemModal.showModal()
+	document.body.classList.add('dialog-open')
 })
 openItem5.addEventListener('click', function () {
 	itemModal.showModal()
+	document.body.classList.add('dialog-open')
 })
 openItem6.addEventListener('click', function () {
 	itemModal.showModal()
+	document.body.classList.add('dialog-open')
 })
 openItem7.addEventListener('click', function () {
 	itemModal.showModal()
+	document.body.classList.add('dialog-open')
 })
 openItem8.addEventListener('click', function () {
 	itemModal.showModal()
+	document.body.classList.add('dialog-open')
 })
 openItem9.addEventListener('click', function () {
 	itemModal.showModal()
+	document.body.classList.add('dialog-open')
 })
 openItem10.addEventListener('click', function () {
 	itemModal.showModal()
+	document.body.classList.add('dialog-open')
 })
 closeItem.addEventListener('click', function () {
 	itemModal.close()
+	document.body.classList.remove('dialog-open')
 })
+
+window.onclick = function (event) {
+	if (event.target == openModal) {
+		openModal.close()
+		document.body.classList.remove('dialog-open')
+	} else if (event.target == itemModal) {
+		itemModal.close()
+		document.body.classList.remove('dialog-open')
+	}
+}
+
+let scrollTop
+let scrollLeft
+
+const elements = document.querySelectorAll('.category')
+const thresholds = [25, 40, 85, 100]
+
+function topScroll() {
+	const scrollPercentage =
+		(window.scrollY /
+			(document.documentElement.scrollHeight - window.innerHeight)) *
+		100
+	elements.forEach((element, index) => {
+		if (scrollPercentage >= thresholds[index]) {
+			elements.forEach(el => el.classList.remove('category_on_active'))
+			// Add active class to the current element
+			element.classList.add('category_on_active')
+		}
+	})
+}
+window.addEventListener('scroll', topScroll)
