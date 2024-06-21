@@ -375,10 +375,11 @@ category.addEventListener('click', () => {
 	category.classList.add('category_on_active')
 	category2.classList.remove('category_on_active')
 	category3.classList.remove('category_on_active')
-	category4.classList.remove('category_on_active')
-	setTimeout(() => {
-		drag = true
-	}, 500)
+	if (drag === false) {
+		setTimeout(() => {
+			drag = true
+		}, 500)
+	}
 })
 
 category2.addEventListener('click', () => {
@@ -387,10 +388,11 @@ category2.addEventListener('click', () => {
 	category2.classList.add('category_on_active')
 	category.classList.remove('category_on_active')
 	category3.classList.remove('category_on_active')
-	category4.classList.remove('category_on_active')
-	setTimeout(() => {
-		drag = true
-	}, 500)
+	if (drag === false) {
+		setTimeout(() => {
+			drag = true
+		}, 500)
+	}
 })
 
 category3.addEventListener('click', () => {
@@ -399,10 +401,11 @@ category3.addEventListener('click', () => {
 	category3.classList.add('category_on_active')
 	category2.classList.remove('category_on_active')
 	category.classList.remove('category_on_active')
-	category4.classList.remove('category_on_active')
-	setTimeout(() => {
-		drag = true
-	}, 500)
+	if (drag === false) {
+		setTimeout(() => {
+			drag = true
+		}, 500)
+	}
 })
 
 // category4.addEventListener('click', () => {
