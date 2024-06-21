@@ -223,6 +223,8 @@ header {
 }
 
 .go_basket {
+  max-width: 400px;
+  margin: 0 auto;
   position: sticky;
   bottom: 0;
   padding: 22px 18px 22px 17px;
