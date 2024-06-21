@@ -223,16 +223,16 @@ header {
 }
 
 .go_basket {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
   position: sticky;
   bottom: 0;
   padding: 22px 18px 22px 17px;
-  border-radius: 14px 14px 0 0;
+  border-radius: 14px;
 }
 
 .go_basket button {
   border: 1px solid #000;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
   color: #fff;
   background-color: #000;
