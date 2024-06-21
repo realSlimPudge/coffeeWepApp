@@ -458,6 +458,15 @@ window.addEventListener('click', function (event) {
 		document.body.classList.remove('dialog-open')
 	}
 })
+window.addEventListener('touchstart', function (event) {
+	if (event.target == openModal) {
+		openModal.close()
+		document.body.classList.remove('dialog-open')
+	} else if (event.target == itemModal) {
+		itemModal.close()
+		document.body.classList.remove('dialog-open')
+	}
+})
 
 let scrollTop
 let scrollLeft
