@@ -201,6 +201,7 @@ header {
 }
 
 .go_basket {
+	position: sticky;
 	max-width: 400px;
 	margin: 0 auto;
 	position: sticky;
@@ -363,6 +364,9 @@ header {
 
 .bottom_btn {
 	margin-bottom: 30px;
+}
+.bottom_btn button {
+	width: 100%;
 }
 
 /*Жорик*/
@@ -627,7 +631,13 @@ h5 {
 		padding: 14px 19px;
 	}
 }
-
+@media screen and (max-width: 390px) {
+	.go_basket button {
+		padding: 20px 63px;
+		width: 100%;
+		font-size: 14px;
+	}
+}
 @media screen and (max-width: 420px) {
 	.item_grid {
 		width: 140px;
