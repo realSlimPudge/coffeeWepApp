@@ -254,6 +254,9 @@ header {
 	margin: 0 auto;
 	padding-top: 10px;
 	justify-content: space-between;
+	position: sticky;
+	top: 0;
+	background: linear-gradient(to bottom, white, rgba(255, 255, 255, 0));
 }
 
 .title_dialog div {
@@ -321,6 +324,7 @@ header {
 	border-radius: 13px;
 	width: 166px;
 	height: 255px;
+	margin: 0 auto;
 }
 
 .more {
@@ -334,9 +338,9 @@ header {
 }
 
 .cost_grid {
-	justify-content: space-betweens;
 	display: flex;
 	align-items: center;
+	width: 90%;
 }
 
 .cost_grid span:nth-last-child(2) {
@@ -350,7 +354,7 @@ header {
 	font-weight: 300;
 	font-size: 10px;
 	color: #000;
-	margin-left: 70px;
+	margin-left: 50px;
 }
 
 .title_mini {
@@ -359,7 +363,12 @@ header {
 	font-size: 20px;
 	color: #000;
 }
-
+.more-img {
+	max-width: 154px;
+}
+.more-img img {
+	width: 100%;
+}
 .items_grid {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -369,6 +378,7 @@ header {
 
 .bottom_btn {
 	margin-bottom: 30px;
+	bottom: 5%;
 }
 .bottom_btn button {
 	width: 100%;
@@ -621,12 +631,6 @@ h5 {
 	max-width: 14px;
 }
 
-@media screen and (max-width: 370px) {
-	.category {
-		font-size: 12px;
-	}
-}
-
 @media screen and (max-width: 425px) {
 	.showcase_goods {
 		grid-gap: 16px 8px;
@@ -636,20 +640,20 @@ h5 {
 		padding: 14px 19px;
 	}
 }
-@media screen and (max-width: 390px) {
-	.go_basket button {
-		padding: 20px 63px;
-		width: 100%;
-		font-size: 14px;
-	}
-}
 @media screen and (max-width: 420px) {
 	.item_grid {
 		width: 140px;
 	}
 
 	.cost_grid span:nth-last-of-type(1) {
-		margin-left: 40px;
+		margin-left: 30px;
+	}
+}
+@media screen and (max-width: 390px) {
+	.go_basket button {
+		padding: 20px 63px;
+		width: 100%;
+		font-size: 14px;
 	}
 }
 
@@ -669,6 +673,24 @@ h5 {
 		margin: 0 auto;
 	}
 }
+@media screen and (max-width: 370px) {
+	.category {
+		font-size: 12px;
+	}
+	.item_grid {
+		width: 120px;
+	}
+	.title_mini {
+		font-size: 16px;
+	}
+	.cost_grid span:nth-last-child(2) {
+		font-size: 13px;
+	}
+	.cost_grid span:nth-last-of-type(1) {
+		margin-left: 20px;
+	}
+}
+
 @media screen and (max-width: 330px) {
 	.category {
 		font-size: 10px;
