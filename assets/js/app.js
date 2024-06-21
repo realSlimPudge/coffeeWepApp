@@ -95,6 +95,9 @@ let countGoodsDrink3 = 1
 let countGoodsBakery1 = 1
 let countGoodsBakery2 = 1
 let countGoodsBakery3 = 1
+
+let drag = true
+
 //items
 const itemModal = document.getElementById('modalItem')
 const closeItem = document.getElementById('close-modal-btn')
@@ -367,30 +370,39 @@ addBacketBakery3.addEventListener('click', () => {
 
 //евгений
 category.addEventListener('click', () => {
+	drag = false
+
+	category.classList.add('category_on_active')
+	category2.classList.remove('category_on_active')
+	category3.classList.remove('category_on_active')
+	category4.classList.remove('category_on_active')
 	setTimeout(() => {
-		category.classList.add('category_on_active')
-		category2.classList.remove('category_on_active')
-		category3.classList.remove('category_on_active')
-		category4.classList.remove('category_on_active')
-	}, 300)
+		drag = true
+	}, 500)
 })
 
 category2.addEventListener('click', () => {
+	drag = false
+
+	category2.classList.add('category_on_active')
+	category.classList.remove('category_on_active')
+	category3.classList.remove('category_on_active')
+	category4.classList.remove('category_on_active')
 	setTimeout(() => {
-		category2.classList.add('category_on_active')
-		category.classList.remove('category_on_active')
-		category3.classList.remove('category_on_active')
-		category4.classList.remove('category_on_active')
-	}, 300)
+		drag = true
+	}, 500)
 })
 
 category3.addEventListener('click', () => {
+	drag = false
+
+	category3.classList.add('category_on_active')
+	category2.classList.remove('category_on_active')
+	category.classList.remove('category_on_active')
+	category4.classList.remove('category_on_active')
 	setTimeout(() => {
-		category3.classList.add('category_on_active')
-		category2.classList.remove('category_on_active')
-		category.classList.remove('category_on_active')
-		category4.classList.remove('category_on_active')
-	}, 300)
+		drag = true
+	}, 500)
 })
 
 // category4.addEventListener('click', () => {
@@ -477,16 +489,18 @@ const elements = document.querySelectorAll('.category')
 const thresholds = [25, 40, 85, 100]
 
 function topScroll() {
-	const scrollPercentage =
-		(window.scrollY /
-			(document.documentElement.scrollHeight - window.innerHeight)) *
-		100
-	elements.forEach((element, index) => {
-		if (scrollPercentage >= thresholds[index]) {
-			elements.forEach(el => el.classList.remove('category_on_active'))
-			// Add active class to the current element
-			element.classList.add('category_on_active')
-		}
-	})
+	if (drag === true) {
+		const scrollPercentage =
+			(window.scrollY /
+				(document.documentElement.scrollHeight - window.innerHeight)) *
+			100
+		elements.forEach((element, index) => {
+			if (scrollPercentage >= thresholds[index]) {
+				elements.forEach(el => el.classList.remove('category_on_active'))
+				// Add active class to the current element
+				element.classList.add('category_on_active')
+			}
+		})
+	}
 }
 window.addEventListener('scroll', topScroll)
