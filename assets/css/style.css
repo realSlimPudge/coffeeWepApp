@@ -44,9 +44,11 @@ header {
 	max-width: 335px;
 	margin: 0px auto;
 }
+
 .header_logo img {
 	width: 100%;
 }
+
 .main_window {
 	background-color: #24272b;
 	padding: 22px 19px 16px 19px;
@@ -115,6 +117,8 @@ header {
 	font-weight: 600;
 }
 
+
+
 .img_cappuccino {
 	max-width: 122px;
 	margin: 30px auto 10px auto;
@@ -130,6 +134,7 @@ header {
 	align-items: center;
 	margin-bottom: 15px;
 }
+
 
 #card_price {
 	font-size: 16px;
@@ -363,12 +368,15 @@ header {
 	font-size: 20px;
 	color: #000;
 }
+
 .more-img {
 	max-width: 154px;
 }
+
 .more-img img {
 	width: 100%;
 }
+
 .items_grid {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -381,6 +389,7 @@ header {
 	margin-bottom: 30px;
 	bottom: 10%;
 }
+
 .bottom_btn button {
 	width: 100%;
 }
@@ -493,6 +502,14 @@ header {
 .img_cappuccino {
 	width: 158px;
 	margin: 10px auto 10px auto;
+}
+
+.margin-omg {
+	margin-bottom: 28px;
+}
+
+.margin-omg2 {
+	margin-bottom: 33px;
 }
 
 .dispfor-img {
@@ -641,6 +658,7 @@ h5 {
 		padding: 14px 19px;
 	}
 }
+
 @media screen and (max-width: 420px) {
 	.item_grid {
 		width: 140px;
@@ -650,6 +668,7 @@ h5 {
 		margin-left: 30px;
 	}
 }
+
 @media screen and (max-width: 390px) {
 	.go_basket button {
 		padding: 20px 63px;
@@ -662,31 +681,39 @@ h5 {
 	.card_good {
 		max-width: 300px;
 	}
+
 	.add_shopping_cart {
 		max-width: 100px;
 	}
+
 	.add_shopping_cart span {
 		margin: 0 auto;
 		padding: 6px 15px;
 	}
+
 	.card_count_of_goods {
 		max-width: 101px;
 		margin: 0 auto;
 	}
 }
+
 @media screen and (max-width: 370px) {
 	.category {
 		font-size: 12px;
 	}
+
 	.item_grid {
 		width: 120px;
 	}
+
 	.title_mini {
 		font-size: 16px;
 	}
+
 	.cost_grid span:nth-last-child(2) {
 		font-size: 13px;
 	}
+
 	.cost_grid span:nth-last-of-type(1) {
 		margin-left: 20px;
 	}
