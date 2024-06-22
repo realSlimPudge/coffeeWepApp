@@ -57,7 +57,7 @@ header {
 .main_categories {
 	display: flex;
 	max-width: 389px;
-	justify-content: space-between;
+	justify-content: space-around;
 	margin: 0 auto;
 	margin-bottom: 17px;
 	align-items: center;
